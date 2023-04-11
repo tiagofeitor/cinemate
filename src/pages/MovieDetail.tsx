@@ -49,7 +49,7 @@ export const MovieDetail = () => {
               <p className='my-3'>{movie ? movie.overview : '...'}</p>
               {/* se tiver a lista de Genres renderiza , se nao existir dá skip ao p */}
               {movie.genres ? 
-              <p className='my-7 felx flex-wrap gap-2'>
+              <p className='my-7 flex flex-wrap gap-2'>
                 { movie.genres.map( (genre) => 
                   <span key={genre.id} className='mr-2 border border-gray-200 rounded dark:border-gray-600 p-2'>{genre.name}</span>
                   )}
